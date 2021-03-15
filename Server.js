@@ -10,15 +10,11 @@ app.use(express.json());
 connectDB();
 
 //define routes
-<<<<<<< HEAD
 app.use("/api/newsletter", require("./routes/newsletter"));
 app.use("/api/aboutUs1", require("./routes/aboutUs1"));
 app.use("/api/aboutUs2", require("./routes/aboutUs2"));
-=======
-app.use ("/api/newsletter", require ("./routes/newsletter"))
-app.use ("/api/cards", require ("./routes/cards"))
-app.use ("/api/blog", require ("./routes/blog"))
->>>>>>> main
+app.use("/api/cards", require("./routes/cards"));
+app.use("/api/blog", require("./routes/blog"));
 
 const PORT = process.env.PORT || 5001;
 
