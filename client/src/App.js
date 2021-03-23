@@ -1,6 +1,10 @@
 import "./App.css";
 import NavBar from "./component/NavBar/NavBar";
 import Subscribers from "./component/Subscribers";
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>;
 
 function App() {
   return (
