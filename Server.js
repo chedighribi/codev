@@ -10,7 +10,10 @@ app.use (express.json())
 connectDB();
 
 //define routes
-app.use ("/api/newsletter", require ("./routes/newsletter"))
+app.use ("/", require ("./routes/newsletter"))
+app.use ("/api/work", require ("./routes/work"))
+
+
 
 const PORT = process.env.PORT || 5001;
 
