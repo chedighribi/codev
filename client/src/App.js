@@ -10,8 +10,11 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <h2>ouhhhhhh</h2>
       <h1>codev</h1>
+      <img
+        src="https://filedn.com/ltOdFv1aqz1YIFhf4gTY8D7/ingus-info/BLOGS/Photography-stocks3/stock-photography-slider.jpg"
+        width="50%"
+      />
     </div>
   );
 }
