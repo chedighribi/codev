@@ -1,15 +1,18 @@
-import './App.css';
-import Subscribers from './component/Subscribers';
-import {Admin,Resource} from 'react-admin'
-import restProvider from 'ra-data-simple-rest'
-import SubscribersList from './component/SubscribersList';
-
+import "./App.css";
+import NavBar from "./component/NavBar/NavBar";
+import Subscribers from "./component/Subscribers";
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>;
 
 function App() {
   return (
-    <Admin dataProvider={restProvider('http://localhost:3000')}>
-    <Resource name='Subscribers' list={SubscribersList} />
-    </Admin>
+    <div className="App">
+      <NavBar />
+      <h2>ouhhhhhh</h2>
+      <h1>codev</h1>
+    </div>
   );
 }
 
