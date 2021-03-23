@@ -1,20 +1,30 @@
 import React from "react";
+import MenuIcon from "@material-ui/icons/Menu";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <div>
-      <div>
-        <img src="./logo.png" alt="logo" />
+    <div className="navigation-menu">
+      <div className="navigation-logo">
+        <img width="180px" src="./logo.png" alt="logo" />
       </div>
-      <div>
-        <ul>
-          <li>Accueil</li>
-          <li>A propos de nous</li>
-          <li>Nos réalisations</li>
-          <li>Blog</li>
-          <li>Contactez-nous</li>
-        </ul>
-      </div>
+      <ul>
+        <li>
+          <a href="/">Accueil</a>
+        </li>
+        <li>
+          <a href="/">A propos de nous</a>
+        </li>
+        <li>
+          <a href="/">Nos réalisations</a>
+        </li>
+        <li>
+          <a href="/">Blog</a>
+        </li>
+        <li>
+          <a href="/">Contactez-nous</a>
+        </li>
+      </ul>
     </div>
   );
 };
