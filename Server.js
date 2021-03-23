@@ -10,6 +10,8 @@ app.use(express.json());
 connectDB();
 
 //define routes
+app.use ("/", require ("./routes/newsletter"))
+app.use ("/api/work", require ("./routes/work"))
 app.use("/api/newsletter", require("./routes/newsletter"));
 app.use("/api/aboutUs1", require("./routes/aboutUs1"));
 app.use("/api/aboutUs2", require("./routes/aboutUs2"));

@@ -6,12 +6,12 @@ const Subscribers = () => {
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
 
-    axios.get('/api/newsletter')
+    axios.get('/')
     .then ((res)=> { setSub(res.data.subscribers)})
     .catch ((err)=>console.log(err))
 
     const handleAdd =()=> {
-        axios.post('/api/newsletter',{fullName,email})
+        axios.post('/',{fullName,email})
         .then ((res)=>console.log(res.data.msg))
         .catch ((err)=>console.log(err))    
     }
