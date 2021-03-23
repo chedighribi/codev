@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <h2>ouhhhhhh</h2>
       <h1>codev</h1>
     </div>
   );
