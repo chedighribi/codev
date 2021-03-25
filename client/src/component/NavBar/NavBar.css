@@ -1,59 +1,87 @@
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-menu {
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 15px 10px;
-    position:sticky;
-    top:0;
-    box-shadow: 5px 0px 10px  rgb(124, 122, 122) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 10px;
+  position: sticky;
+  top: 0;
+  box-shadow: 5px 0px 10px rgb(124, 122, 122);
+}
+
+.navigation-ul {
+  display: flex;
+  flex-shrink: 1;
 }
 
 ul {
-    display:flex;  
-    justify-content: space-around;
-    list-style: none;
-    width:64%;
-    align-items: center; 
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
 }
 
 li {
-    text-transform: uppercase;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 540;
-    font-size: 14px;
-    letter-spacing: 1.75px;
-    position:relative;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-weight: 540;
+  font-size: 14px;
+  letter-spacing: 1.75px;
+  position: relative;
+  margin: 0 10px;
 }
 
 li a {
-    text-decoration: none;
-    color:#ababab;
+  text-decoration: none;
+  color: #ababab;
 }
 
-li a:after {    
-    /* background: none repeat scroll 0 0 transparent; */
-    bottom: 0;
-    content: "";
-    height: 1px;
-    left: 0%;
-    position: absolute;
-    background:black;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+li a:after {
+  /* background: none repeat scroll 0 0 transparent; */
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
-li a:hover:after { 
-    width: 100%; 
-    left: 0;
+li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 li a:hover {
-    color:black;
-    transition:300ms;
+  color: black;
+  transition: 300ms;
+}
+
+@media only screen and (min-width: 1050px) {
+  .menu-icon {
+    visibility: hidden;
+  }
+  .navigation-ul {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .menu-icon {
+    margin-right: 20px;
+  }
+
+  .menu-icon:hover {
+    color: #5945e6;
+    transition: 300ms;
+  }
+
+  .navigation-ul ul {
+    visibility: hidden;
+  }
 }
