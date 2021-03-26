@@ -12,6 +12,7 @@
   position: sticky;
   top: 0;
   box-shadow: 5px 0px 10px rgb(124, 122, 122);
+  z-index: 9999;
 }
 
 .navigation-ul {
@@ -58,6 +59,7 @@ li a:hover:after {
 }
 
 li a:hover {
+  text-decoration: none;
   color: black;
   transition: 300ms;
 }
@@ -69,6 +71,9 @@ li a:hover {
   .navigation-ul {
     margin-right: 40px;
   }
+  /* .navigation-logo {
+    margin-left: 40px;
+  } */
 }
 
 @media only screen and (max-width: 1050px) {
