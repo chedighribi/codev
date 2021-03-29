@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 15px 10px;
+  padding: 25px 10px;
   position: sticky;
   top: 0;
   box-shadow: 5px 0px 10px rgb(124, 122, 122);
@@ -17,6 +17,8 @@
 
 .navigation-ul {
   display: flex;
+  position: relative;
+  align-items: center;
   flex-shrink: 1;
 }
 
@@ -25,6 +27,7 @@ ul {
   justify-content: space-around;
   list-style: none;
   align-items: center;
+  margin: 0 !important;
 }
 
 li {
@@ -77,8 +80,14 @@ li a:hover {
 }
 
 @media only screen and (max-width: 1050px) {
+  .navigation-ul {
+    width: 50%;
+    overflow: hidden;
+  }
+
   .menu-icon {
-    margin-right: 20px;
+    position: absolute;
+    right: 15%;
   }
 
   .menu-icon:hover {
