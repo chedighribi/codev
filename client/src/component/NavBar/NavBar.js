@@ -2,6 +2,7 @@ import React from "react";
 import MenuIcon from "@material-ui/icons/Menu";
 import Scroll from "react-scroll";
 import "./NavBar.css";
+import NavBarModal from "./NavBarModal";
 
 const NavBar = () => {
   let scroll = Scroll.animateScroll;
@@ -37,7 +38,7 @@ const NavBar = () => {
           </li>
         </ul>
         <div className="menu-icon">
-          <MenuIcon fontSize="large" />
+          <NavBarModal />
         </div>
       </div>
     </div>
