@@ -5,18 +5,14 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Scroll from "react-scroll";
 import CloseIcon from "@material-ui/icons/Close";
 
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
-
 function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
+  // const top = 50;
+  // const left = 50;
 
   return {
-    top: `${top}%`,
-    left: `${left}%`,
-    transform: `translate(-${top}%, -${left}%)`,
+    top: `0%`,
+    left: `0%`,
+    // transform: `translate(-${top}%, -${left}%)`,
   };
 }
 
@@ -24,10 +20,9 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
     width: 400,
-    backgroundColor: theme.palette.background.paper,
-    border: "2px solid #000",
+    minHeight: 600,
+    backgroundImage: "linear-gradient(to bottom right, #6564e8, #9b7af2)",
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
   },
 }));
 
@@ -54,11 +49,13 @@ export default function NavBarModal() {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <a href="/">
-        <img width="180px" src="./logo.png" alt="logo" />
-      </a>
-      <div className="close-icon">
-        <CloseIcon onClick={handleClose} />
+      <div className="nav-modal-top">
+        <a href="/">
+          <img width="180px" src="./logo.png" alt="logo" />
+        </a>
+        <div className="close-icon">
+          <CloseIcon onClick={handleClose} />
+        </div>
       </div>
       <ul>
         <li>

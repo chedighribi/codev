@@ -8,11 +8,10 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 25px 10px;
   position: sticky;
   top: 0;
   box-shadow: 5px 0px 10px rgb(124, 122, 122);
-  z-index: 9999;
+  z-index: 999;
 }
 
 .navigation-ul {
@@ -72,18 +71,25 @@ li a:hover {
 }
 
 @media only screen and (min-width: 1050px) {
+  .navigation-menu {
+    padding: 25px 10px;
+  }
   .menu-icon {
     visibility: hidden;
   }
   .navigation-ul {
     margin-right: 40px;
   }
-  /* .navigation-logo {
+  .navigation-logo {
     margin-left: 40px;
-  } */
+  }
 }
 
 @media only screen and (max-width: 1050px) {
+  .navigation-menu {
+    padding: 5px 10px;
+  }
+
   .navigation-ul {
     width: 50%;
     overflow: hidden;
@@ -103,4 +109,12 @@ li a:hover {
   .navigation-ul ul {
     visibility: hidden;
   }
+}
+
+.nav-modal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 12px 20px;
 }
