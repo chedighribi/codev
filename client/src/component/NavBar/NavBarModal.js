@@ -24,6 +24,23 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: "linear-gradient(to bottom right, #6564e8, #9b7af2)",
     boxShadow: theme.shadows[5],
   },
+  ul: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    paddingTop: "20px",
+  },
+  li: {
+    padding: "20px 0",
+    marginLeft: "30px",
+    width: "80%",
+    borderBottom: "thin dotted white",
+    textTransform: "none",
+  },
+  a: {
+    color: "white",
+    fontSize: "16px",
+  },
 }));
 
 export default function NavBarModal() {
@@ -57,23 +74,31 @@ export default function NavBarModal() {
           <CloseIcon onClick={handleClose} />
         </div>
       </div>
-      <ul>
-        <li>
-          <a href="#" onClick={scrollTop}>
+      <ul className={classes.ul}>
+        <li className={classes.li}>
+          <a href="#" onClick={scrollTop} className={classes.a}>
             Accueil
           </a>
         </li>
-        <li>
-          <a href="/">A propos de nous</a>
+        <li className={classes.li}>
+          <a href="/" className={classes.a}>
+            A propos de nous
+          </a>
         </li>
-        <li>
-          <a href="/">Nos réalisations</a>
+        <li className={classes.li}>
+          <a href="/" className={classes.a}>
+            Nos réalisations
+          </a>
         </li>
-        <li>
-          <a href="/">Blog</a>
+        <li className={classes.li}>
+          <a href="/" className={classes.a}>
+            Blog
+          </a>
         </li>
-        <li>
-          <a href="/">Contactez-nous</a>
+        <li className={classes.li}>
+          <a href="/" className={classes.a}>
+            Contactez-nous
+          </a>
         </li>
       </ul>
     </div>
