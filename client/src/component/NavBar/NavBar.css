@@ -44,7 +44,7 @@ li a {
   color: #ababab;
 }
 
-li a:after {
+.navigation-ul li a:after {
   /* background: none repeat scroll 0 0 transparent; */
   bottom: 0;
   content: "";
@@ -55,7 +55,7 @@ li a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-li a:hover:after {
+.navigation-ul li a:hover:after {
   width: 100%;
   left: 0;
 }
