@@ -17,12 +17,19 @@ function getModalStyle() {
 }
 
 const useStyles = makeStyles((theme) => ({
+  "@global": {
+    "*::-webkit-scrollbar": {
+      width: 0,
+    },
+  },
   paper: {
-    position: "absolute",
-    width: 400,
-    minHeight: 600,
+    position: "relative",
+    minWidth: 300,
+    maxWidth: 400,
+    minHeight: "100%",
+    maxHeight: "100%",
+    overflow: "scroll",
     backgroundImage: "linear-gradient(to bottom right, #6564e8, #9b7af2)",
-    boxShadow: theme.shadows[5],
   },
   ul: {
     display: "flex",
