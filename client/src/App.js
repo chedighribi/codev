@@ -2,9 +2,15 @@ import "./App.css";
 import NavBar from "./component/NavBar/NavBar";
 import Subscribers from "./component/Subscribers";
 import Carroussel from "./component/Carroussel/Carroussel";
+import AboutUs1 from "./component/AboutUs/AboutUs1";
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>;
+<link rel="preconnect" href="https://fonts.gstatic.com" />;
+<link
+  href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+  rel="stylesheet"
 />;
 
 function App() {
@@ -13,12 +19,7 @@ function App() {
       <div id="top">
         <NavBar />
         <Carroussel />
-        <h2>ouhhhhhh</h2>
-        <h1>codev</h1>
-        <img
-          src="https://filedn.com/ltOdFv1aqz1YIFhf4gTY8D7/ingus-info/BLOGS/Photography-stocks3/stock-photography-slider.jpg"
-          width="50%"
-        />
+        <AboutUs1 />
       </div>
     </div>
   );
