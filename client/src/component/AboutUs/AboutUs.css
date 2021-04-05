@@ -1,0 +1,27 @@
+h2 {
+  color: #333;
+  font-size: 28px !important;
+}
+
+#about-us1 {
+  margin-top: 90px !important;
+  margin: auto;
+  max-width: 1190px;
+  text-align: center;
+}
+
+@media all and (max-width: 1200px) and (min-width: 990px) {
+  #about-us1 {
+    max-width: 850px;
+  }
+  h2 {
+    font-size: 34px !important;
+  }
+}
+
+@media all and (max-width: 992px) {
+  #about-us1 {
+    max-width: 700px;
+    padding: 0 20px;
+  }
+}
